@@ -3,12 +3,11 @@ import com.google.gson.JsonParser;
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
 import okhttp3.Response;
-
 import java.io.IOException;
 import java.util.Scanner;
 
 public class CurrencyConversion {
-    public static void main(String []args) throws IOException {
+    public static void main(String []args) throws IOException, NullPointerException, SocketTimeoutException {
         //base url
         final var url = "https://api.apilayer.com/fixer/";
         //Build new client
@@ -26,7 +25,7 @@ public class CurrencyConversion {
                 .addHeader("apikey", "yourAPIkey") //replace yourAPIkey with your fixer API key
                 .build();
         Response responseSymbols = null;
-        String symbolMessage = null;
+        String symbolMessage = null; 
         try {
             //send request and accept response
             responseSymbols = client.newCall(requestSymbols).execute();
@@ -77,8 +76,6 @@ public class CurrencyConversion {
             response = client.newCall(request).execute();
             //convert response body to String
             message = response.body().string();
-
-
         }
         catch (NullPointerException e){
             System.out.println(e.getMessage());
