@@ -1,6 +1,6 @@
 # Currency-Converter
 * Real-time currency conversion using Java &amp; Fixer API
-* OkHttp has been used to send request to client and collect the response.
+* OkHttp has been used to send request and collect the response.
 * Gson has been used to parse JSON
 
 # Dependencies 
