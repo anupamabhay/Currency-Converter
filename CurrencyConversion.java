@@ -28,7 +28,7 @@ public class CurrencyConversion {
         Response responseSymbols = null;
         String symbolMessage = null;
         try {
-            //send request to client and accept response
+            //send request and accept response
             responseSymbols = client.newCall(requestSymbols).execute();
             //store response as a String
             symbolMessage = responseSymbols.body().string();
