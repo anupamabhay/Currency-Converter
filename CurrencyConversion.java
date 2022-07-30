@@ -94,6 +94,6 @@ public class CurrencyConversion {
         JsonObject jObj = JsonParser.parseString(message).getAsJsonObject();
         //Print result
         System.out.println(amount + " " + from + " is equal to "+jObj.getAsJsonPrimitive("result")+" "+to);
-
+        scanner.close();
     }
 }
