@@ -7,5 +7,4 @@
 All the dependencies are available in the pom.xml file
 
 ## Output/Result
-![image](https://user-images.githubusercontent.com/24754580/184435563-2ec33507-8d06-4131-8565-88f4be0475d9.png)
-
+![image](https://user-images.githubusercontent.com/24754580/184435774-5cd5f4f1-84c0-45b8-bc7c-fd7ad58813d8.png)
